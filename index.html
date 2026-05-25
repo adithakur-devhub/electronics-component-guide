@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Electronics Component Guide</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Electronics Component Guide</h1>
+
+<h2>Resistor Color Code Calculator</h2>
+
+<select id="band1">
+<option value="0">Black</option>
+<option value="1">Brown</option>
+<option value="2">Red</option>
+<option value="3">Orange</option>
+<option value="4">Yellow</option>
+<option value="5">Green</option>
+<option value="6">Blue</option>
+<option value="7">Violet</option>
+<option value="8">Grey</option>
+<option value="9">White</option>
+</select>
+
+<select id="band2">
+<option value="0">Black</option>
+<option value="1">Brown</option>
+<option value="2">Red</option>
+<option value="3">Orange</option>
+<option value="4">Yellow</option>
+<option value="5">Green</option>
+<option value="6">Blue</option>
+<option value="7">Violet</option>
+<option value="8">Grey</option>
+<option value="9">White</option>
+</select>
+
+<select id="multiplier">
+<option value="1">Black ×1</option>
+<option value="10">Brown ×10</option>
+<option value="100">Red ×100</option>
+<option value="1000">Orange ×1k</option>
+<option value="10000">Yellow ×10k</option>
+<option value="100000">Green ×100k</option>
+<option value="1000000">Blue ×1M</option>
+</select>
+
+<button onclick="calculateResistor()">
+Calculate Resistance
+</button>
+
+<h2 id="result">
+Resistance: -
+</h2>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
