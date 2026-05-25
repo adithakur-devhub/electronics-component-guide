@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Electronics Component Guide</title>
+<title>Electronics Toolkit Pro</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,7 +11,7 @@
 
 <div class="container">
 
-<h1>Electronics Component Guide</h1>
+<h1>⚡ Electronics Toolkit Pro</h1>
 
 <h2>Resistor Color Code Calculator</h2>
 
@@ -45,11 +45,40 @@
 <option value="1">Black ×1</option>
 <option value="10">Brown ×10</option>
 <option value="100">Red ×100</option>
-<option value="1000">Orange ×1k</option>
-<option value="10000">Yellow ×10k</option>
-<option value="100000">Green ×100k</option>
+<option value="1000">Orange ×1K</option>
+<option value="10000">Yellow ×10K</option>
+<option value="100000">Green ×100K</option>
 <option value="1000000">Blue ×1M</option>
 </select>
+
+<select id="tolerance">
+<option value="gold">Gold ±5%</option>
+<option value="silver">Silver ±10%</option>
+<option value="brown">Brown ±1%</option>
+<option value="red">Red ±2%</option>
+</select>
+
+<!-- Resistor Visualization -->
+
+<div class="resistor-container">
+
+<div class="wire"></div>
+
+<div class="resistor-body">
+
+<div id="band1Color" class="band"></div>
+
+<div id="band2Color" class="band"></div>
+
+<div id="multiplierColor" class="band"></div>
+
+<div id="toleranceColor" class="band gold"></div>
+
+</div>
+
+<div class="wire"></div>
+
+</div>
 
 <button onclick="calculateResistor()">
 Calculate Resistance
@@ -58,6 +87,10 @@ Calculate Resistance
 <h2 id="result">
 Resistance: -
 </h2>
+
+<h3 id="range">
+Tolerance Range: -
+</h3>
 
 </div>
 
